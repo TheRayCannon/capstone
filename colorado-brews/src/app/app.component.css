@@ -45,3 +45,8 @@ h1 {
 .brewery-listing li:hover {
     background-color: coral;
 }
+
+.brewery-listing img {
+    width: 200px;
+    border-radius: 20px;
+}
