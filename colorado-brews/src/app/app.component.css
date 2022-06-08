@@ -1,0 +1,47 @@
+body {
+    background-image: url("Red_brick_wall_texture.JPG");
+    background-repeat: repeat;
+}
+
+header {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.brewery-listing {
+    background-image: url("src/app/MMS_Blog_CO-beer-getty_hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    margin: 5px;
+}
+
+.brewery-listing li {
+    background-color: white;
+    font-size: larger;
+    list-style: none;
+    padding-left: 20px;
+    border: 5px;
+    border-color: coral;
+    border-style: groove;
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 20px;
+}
+
+.brewery-listing li:hover {
+    background-color: coral;
+}
