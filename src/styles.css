@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html {
+    background-image: url("app/Red_brick_wall_texture.JPG");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    font-family: 'Bebas Neue', cursive;
+    padding: 0px;
+    margin: 0px;
+}

@@ -1,0 +1,12 @@
+.brewery-listing {
+    background-image: url("src/app/MMS_Blog_CO-beer-getty_hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    margin: 5px;
+}
