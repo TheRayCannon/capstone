@@ -5,14 +5,6 @@ body {
     font-family: 'Bebas Neue', cursive;
 }
 
-header {
-    font-size: xx-large;
-    width: fit-content;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 h1 {
     color: #ffffff;
     background-color: blue;
@@ -23,6 +15,14 @@ h1 {
 
 h1:hover {
     opacity: 1;
+}
+
+header {
+    font-size: xx-large;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .brewery-listing {
