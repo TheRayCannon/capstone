@@ -17,4 +17,6 @@ export class BreweryListingItemsComponent implements OnInit{
         this.breweries = Response.breweries
   })
   }
+
+
 }

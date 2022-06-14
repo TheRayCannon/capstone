@@ -7,3 +7,10 @@ html {
     padding: 0px;
     margin: 0px;
 }
+
+input,
+label,
+textarea {
+    display: block;
+    width: 100%;
+}

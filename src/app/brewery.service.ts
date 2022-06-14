@@ -8,6 +8,10 @@ type BreweriesResponse = {
   breweries: Brewery[];
 }
 
+type BreweryResponse = {
+  breweries: Brewery;
+}
+
 const breweryEndpoint = environment.baseApiUrl
 
 
@@ -16,13 +20,16 @@ const breweryEndpoint = environment.baseApiUrl
 })
 export class BreweryService {
 
-
 constructor(private http: HttpClient) {
-
 }
 
 fetchBreweries(){
   return this.http.get<BreweriesResponse>(environment.baseApiUrl)
+}
+
+
+addBreweries(brewery: Brewery){
+  return this.http.post<BreweryResponse>(environment.baseApiUrl, brewery)
 }
 
 }
