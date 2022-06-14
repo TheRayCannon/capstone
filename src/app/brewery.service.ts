@@ -8,14 +8,13 @@ type BreweriesResponse = {
   breweries: Brewery[];
 }
 
-const breweryEndpoint = environment.baseApiUrl
 
 @Injectable({
   providedIn: 'root'
 })
 export class BreweryService {
   breweries: Brewery[] =[{
-    name:"Brass Brewing Co.",
+    name:"This shouldnt change on my site",
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmpqS73trY3lwFgdOTDaCbPPeoH4bXzzm7xA&usqp=CAU"
   },{
     name:"Cerburus Brewing Co.",
@@ -130,7 +129,7 @@ constructor(private http: HttpClient) {
 }
 
 fetchBreweries(){
-  return this.http.get<BreweriesResponse>(breweryEndpoint)
+  return this.http.get<BreweriesResponse>(environment.baseApiUrl)
 }
 
 }
