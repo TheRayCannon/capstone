@@ -1,6 +1,14 @@
 import { Injectable } from '@angular/core';
-import { of } from 'rxjs';
 import { Brewery } from './models/Brewery';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+
+
+type BreweriesResponse = {
+  breweries: Brewery[];
+}
+
+const breweryEndpoint = environment.baseApiUrl
 
 @Injectable({
   providedIn: 'root'
@@ -117,8 +125,12 @@ export class BreweryService {
    }
 ]
 
+constructor(private http: HttpClient) {
+
+}
+
 fetchBreweries(){
-  return of(this.breweries)
+  return this.http.get<BreweriesResponse>(breweryEndpoint)
 }
 
 }
