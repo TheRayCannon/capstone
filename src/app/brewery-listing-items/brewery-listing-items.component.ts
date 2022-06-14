@@ -13,8 +13,8 @@ export class BreweryListingItemsComponent implements OnInit{
   constructor(private breweryService: BreweryService) {
   }
   ngOnInit(): void {
-      this.breweryService.fetchBreweries().subscribe(Response => {
-        this.breweries = Response.breweries
+      this.breweryService.fetchBreweries().subscribe(response => {
+        this.breweries = response.breweries
   })
   }
 

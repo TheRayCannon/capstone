@@ -7,12 +7,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BreweryListingComponent } from './brewery-listing/brewery-listing.component';
 import { BreweryListingItemsComponent } from './brewery-listing-items/brewery-listing-items.component';
+import { BrewerySearchFormComponent } from './brewery-search-form/brewery-search-form.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
+import { BrewsIndexComponent } from './brews-index/brews-index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BreweryListingComponent,
-    BreweryListingItemsComponent
+    BreweryListingItemsComponent,
+    BrewerySearchFormComponent,
+    SearchResultsComponent,
+    BrewsIndexComponent
   ],
   imports: [
     BrowserModule,

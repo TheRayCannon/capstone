@@ -32,4 +32,8 @@ addBreweries(brewery: Brewery){
   return this.http.post<BreweryResponse>(environment.baseApiUrl, brewery)
 }
 
+search(searchName: string){
+  return this.http.get<BreweriesResponse>(`${environment.baseApiUrl}/search?search=${searchName}`)
+}
+
 }
