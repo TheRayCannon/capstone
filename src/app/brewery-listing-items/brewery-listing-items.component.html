@@ -1,4 +1,5 @@
 <li *ngFor="let brewery of breweries">
+
     <p>{{brewery.name}}</p>
-    <img src="{{brewery.imageUrl}}" alt="{{brewery.name}}">
+    <a href="{{brewery.websiteUrl}}" target="_blank"><img src="{{brewery.imageUrl}}" alt="{{brewery.name}}"></a>
 </li>
