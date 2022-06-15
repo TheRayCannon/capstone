@@ -2,13 +2,12 @@
 h1 {
     color: #ffffff;
     background-color: blue;
-    opacity: .2;
     width: fit-content;
     align-content: center;
 }
 
 h1:hover {
-    opacity: 1;
+    background-color: red;
 }
 
 header {

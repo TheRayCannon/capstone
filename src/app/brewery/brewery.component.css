@@ -1,4 +1,89 @@
 .brewery-entry {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: black;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    gap: 15px;
+    border: 5px;
+    border-style: groove;
+    border-color: coral;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.brewery-name {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.brewery-logo {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+
+.brewery-description {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.list-items-brews {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.list-amenity {
+    grid-column: 3 / 3;
+    grid-row: 2 / 3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    color: coral;
+}
+
+.buttons button {
+    background-color: coral;
+    height: 50px;
+    width: 100px;
+    border: 3px;
+    border-radius: 5px;
+}
+
+form {
+    width: 520px;
+    background-color: rgba(223, 223, 255, 0.582);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+form p {
+    text-align: center;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+input,
+textarea {
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid coral;
+    box-sizing: border-box;
+}
+
+[type=submit] {
+    background-color: rgba(255, 127, 80, 0.356);
+    box-shadow: 2px 2px 2px rgba(66, 2, 92, 0.322);
+    text-align: center;
 }
