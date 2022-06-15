@@ -1,0 +1,78 @@
+<div class="brewery-entry">
+
+    <p>{{brewery.name}}</p>
+    <a href="{{brewery.websiteUrl}}" target="_blank"><img src="{{brewery.imageUrl}}" alt="{{brewery.name}}"></a>
+    <p>{{brewery.description}}</p>
+    <ul>
+        <li *ngIf="brewery.ipaOption">
+            <p>{{brewery.ipaOption}}</p>
+        </li>
+        <li *ngIf="brewery.sourOption">
+            <p>{{brewery.sourOption}}</p>
+        </li>
+        <li *ngIf="brewery.wheatOption">
+            <p>{{brewery.wheatOption}}</p>
+        </li>
+        <li *ngIf="brewery.belgianOption">
+            <p>{{brewery.belgianOption}}</p>
+        </li>
+        <li *ngIf="brewery.alternateOption">
+            <p>{{brewery.alternateOption}}</p>
+        </li>
+        <li *ngIf="brewery.amenityOption">
+            <p>{{brewery.amenityOne}}</p>
+        </li>
+        <li *ngIf="brewery.amenityTwo">
+            <p>{{brewery.amenityTwo}}</p>
+        </li>
+        <li *ngIf="brewery.amenityThree">
+            <p>{{brewery.amenityThree}}</p>
+        </li>
+
+    </ul>
+</div>
+<form *ngIf="edit" #editBreweryForm="ngForm" class="edit-brewery-form" (ngSubmit)="editBrewery()">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="It's actually called..." [(ngModel)]="brewery.name" />
+
+    <label for="image-url">Image</label>
+    <input type="url" name="imageUrl" id="image-url" placeholder="this is our actual logo..." [(ngModel)]="brewery.imageUrl" />
+
+    <label for="description">description</label>
+    <textarea type="text" name="description" id="description" placeholder="You know nothing..." [(ngModel)]="brewery.description"></textarea>
+
+    <label for="website-url">Website</label>
+    <input type="url" name="websiteUrl" id="website-url" placeholder="get that link right..." [(ngModel)]="brewery.websiteUrl" />
+
+    <label for="ipa-option">IPA</label>
+    <input type="text" name="ipaOption" id="ipa-option" placeholder="Our flagship IPA is..." [(ngModel)]="brewery.ipaOption" />
+
+    <label for="sour-option">Sour</label>
+    <input type="text" name="sourOption" id="sour-option" placeholder="Out flagship Sour is..." [(ngModel)]="brewery.sourOption" />
+
+    <label for="stout-option">Stout</label>
+    <input type="text" name="stoutOption" id="stout-option" placeholder="Our flagship Stout is... " [(ngModel)]="brewery.stoutOption" />
+
+    <label for="wheat-option">Wheat</label>
+    <input type="text" name="wheatOption" id="wheat-option" placeholder="Our flagship Wheat is..." [(ngModel)]="brewery.wheatOption" />
+
+    <label for="belgian-option">Belgian</label>
+    <input type="text" name="belgianOption" id="belgian-option" ngModel placeholder="Our flagship Belgian is..." [(ngModel)]="brewery.belgianOption" />
+
+    <label for="alternate-option">Alternate Brew</label>
+    <input type="text" name="alternateOption" id="alternate-option" ngModel placeholder="Our lovable blacksheep is..." [(ngModel)]="brewery.alternateOption" />
+
+
+    <label for="amenity-one">Amenity</label>
+    <input type="text" name="amenityOne" id="amenity-one" placeholder="Something special..." [(ngModel)]="brewery.amenityOne" />
+
+    <label for="amenity-two">Amenity</label>
+    <input type="text" name="amenityTwo" id="amenity-two" placeholder="Something special..." [(ngModel)]="brewery.amenityTwo" />
+
+    <label for="amenity-three">Amenity</label>
+    <input type="text" name="amenityThree" id="amenity-three" placeholder="Something special..." [(ngModel)]="brewery.amenityThree" />
+
+    <input type="submit" value="Update Brewery" />
+</form>
+<button *ngIf="!edit" (click)="toggleEdit()">Edit Brewery</button>
+<button *ngIf="!edit" (click)="onDelete()">Delete Brewery</button>

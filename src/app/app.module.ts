@@ -10,6 +10,8 @@ import { BreweryListingItemsComponent } from './brewery-listing-items/brewery-li
 import { BrewerySearchFormComponent } from './brewery-search-form/brewery-search-form.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { BrewsIndexComponent } from './brews-index/brews-index.component';
+import { BreweryComponent } from './brewery/brewery.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BrewsIndexComponent } from './brews-index/brews-index.component';
     BreweryListingItemsComponent,
     BrewerySearchFormComponent,
     SearchResultsComponent,
-    BrewsIndexComponent
+    BrewsIndexComponent,
+    BreweryComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
