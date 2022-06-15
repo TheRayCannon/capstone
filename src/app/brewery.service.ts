@@ -28,7 +28,7 @@ fetchBreweries(){
 }
 
 
-addBreweries(brewery: Brewery){
+addBrewery(brewery: Brewery){
   return this.http.post<BreweryResponse>(environment.baseApiUrl, brewery)
 }
 

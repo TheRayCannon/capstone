@@ -17,7 +17,11 @@ export class BrewsIndexComponent implements OnInit {
         this.breweries = Response.breweries
   })
   }
-
+  addBrewery(newBrewery: Brewery){
+  this.breweryService.addBrewery(newBrewery).subscribe(response => {
+    this.breweries = [response.breweries, ...this.breweries]
+  })
+  }
 
 }
 

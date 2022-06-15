@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { BreweryService } from '../brewery.service';
 import { Brewery } from '../models/Brewery';
 
@@ -8,7 +8,7 @@ import { Brewery } from '../models/Brewery';
   styleUrls: ['./brewery-listing-items.component.css']
 })
 export class BreweryListingItemsComponent implements OnInit{
-  breweries: Brewery[]= []
+  @Input()breweries: Brewery[]= []
 
   constructor(private breweryService: BreweryService) {
   }

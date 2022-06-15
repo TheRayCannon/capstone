@@ -7,10 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./brewery-search-form.component.css']
 })
 export class BrewerySearchFormComponent  {
-  constructor(private router: Router){
-
-  }
+  constructor(private router: Router){}
    searchBreweries({searchName}: {searchName: string;}){
     this.router.navigate([`/results`], {queryParams: {search : searchName}})
-   }
+    console.log(searchName)
+  }
 }
