@@ -17,7 +17,7 @@ export class SearchResultsComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
-      this.searchName = params["search"]
+      this.searchName = decodeURIComponent(params["search"])
       this.breweryService.search(this.searchName).subscribe(response => {
         this.results = response.breweries
       })
