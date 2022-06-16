@@ -24,3 +24,31 @@ img {
     width: 200px;
     border-radius: 20px;
 }
+
+h3 {
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 250px;
+}
+
+@media screen and (max-width: 800px) {
+    h3 {
+        color: blue;
+        font-size: 50px;
+        background-color: white;
+    }
+    li p {
+        margin-top: 2px;
+        font-size: 20px;
+    }
+    li {
+        width: 250px;
+        display: block;
+        text-align: center;
+    }
+    li img {
+        width: 200px;
+    }
+}

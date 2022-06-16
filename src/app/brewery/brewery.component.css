@@ -91,3 +91,35 @@ textarea {
     box-shadow: 2px 2px 2px rgba(66, 2, 92, 0.322);
     text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+    .brewery-entry {
+        display: block;
+        width: 350px;
+        font-size: larger
+    }
+    .brewery-name {
+        text-align: center;
+    }
+    .brewery-logo {
+        text-align: center;
+    }
+    .buttons {
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+    form {
+        width: 300px;
+        background-color: rgb(253, 253, 253);
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    label {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+}

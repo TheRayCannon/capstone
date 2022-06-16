@@ -24,3 +24,18 @@ img {
     width: 200px;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 800px) {
+    li p {
+        margin-top: 2px;
+        font-size: 20px;
+    }
+    li {
+        width: 250px;
+        display: block;
+        text-align: center;
+    }
+    li img {
+        width: 200px;
+    }
+}
