@@ -1,27 +1,22 @@
 # ColoradoBrews
 
+Welcome to my full stack!
+
+This is a CO springs-based brewery finder, the best place to find your perfect pour.
+![landingpage](src/app/Screenshot 2022-06-16 151001.png)
+
+The purpose of this app is to be able to search for a particular beer, type of brew, or amenity that the local breweries might offer. It sets itself apart from many competitors with its specific search feature.
+
+Can't remember where that "obi-wan" themed beer was from? No worries, go ahead and type what it is you are looking for into the search field.
+![looking for Obi-wan](src/app/Screenshot 2022-06-16 151122.png)
+
+The app will then display those results in a list where they can be perused and clicked to show more information about the brewery you selected.
+![brewery page](src/app/Screenshot 2022-06-16 151218.png)
+
+You are also able to edit, add, and remove breweries as part of its CRUD features.
+![add a brewery](src/app/Screenshot 2022-06-16 151038.png)
+I have built the back end using information pulled from source websites This is a non-profit app. Neither this app nor its creator is partnered with, or represents, any breweries found within its content.
+
+By using this app you agree that you are at least 21 years of age
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
