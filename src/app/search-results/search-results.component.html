@@ -1,4 +1,7 @@
-<app-brewery-listing-items *ngIf="results.length; else empty" [breweries]="results"></app-brewery-listing-items>
+<li *ngFor="let result of results">
+    <p>{{result.name}}</p>
+    <a routerLink="breweries/{{result.id}}"><img src="{{result.imageUrl}}" alt="{{result.name}}"></a>
+</li>
 <ng-template #empty>
     <p>Hmmm.... Looks like we can't find that one!</p>
 </ng-template>
