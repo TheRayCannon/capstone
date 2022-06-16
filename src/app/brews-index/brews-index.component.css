@@ -49,3 +49,12 @@ textarea {
     padding-left: 20px;
     margin: 5px;
 }
+
+h2 {
+    color: coral;
+}
+
+a {
+    font: large;
+    padding: 25px;
+}
