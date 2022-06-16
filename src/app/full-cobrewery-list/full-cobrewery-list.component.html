@@ -1,0 +1,8 @@
+<h3>Check out the Colorado Breweries found across the state!</h3>
+<div class="list-brews">
+    <li *ngFor="let coBrew of coBrews">
+        <p>{{coBrew.name}}</p>
+        <p>City: {{coBrew.city}}</p>
+        <p *ngIf="coBrew.phone">Contact number:{{coBrew.phone}}</p>
+    </li>
+</div>

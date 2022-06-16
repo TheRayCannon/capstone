@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BreweryListingComponent } from './brewery-listing.component';
+import { FullCOBreweryListComponent } from './full-cobrewery-list.component';
 
-describe('BreweryListingComponent', () => {
-  let component: BreweryListingComponent;
-  let fixture: ComponentFixture<BreweryListingComponent>;
+describe('FullCOBreweryListComponent', () => {
+  let component: FullCOBreweryListComponent;
+  let fixture: ComponentFixture<FullCOBreweryListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BreweryListingComponent ]
+      declarations: [ FullCOBreweryListComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BreweryListingComponent);
+    fixture = TestBed.createComponent(FullCOBreweryListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

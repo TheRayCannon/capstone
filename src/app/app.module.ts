@@ -5,24 +5,25 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BreweryListingComponent } from './brewery-listing/brewery-listing.component';
+
 import { BreweryListingItemsComponent } from './brewery-listing-items/brewery-listing-items.component';
 import { BrewerySearchFormComponent } from './brewery-search-form/brewery-search-form.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { BrewsIndexComponent } from './brews-index/brews-index.component';
 import { BreweryComponent } from './brewery/brewery.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FullCOBreweryListComponent } from './full-cobrewery-list/full-cobrewery-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BreweryListingComponent,
     BreweryListingItemsComponent,
     BrewerySearchFormComponent,
     SearchResultsComponent,
     BrewsIndexComponent,
     BreweryComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FullCOBreweryListComponent
   ],
   imports: [
     BrowserModule,

@@ -14,3 +14,10 @@
   amenityThree: string;
 
 }
+
+export type CoBrewery = {
+  name: string,
+  city: string,
+  phone: string,
+
+}

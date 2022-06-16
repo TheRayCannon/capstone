@@ -23,14 +23,15 @@
             <li *ngIf="brewery.belgianOption">
                 <p>{{brewery.belgianOption}}</p>
             </li>
+            <li *ngIf="brewery.alternateOption">
+                <p>{{brewery.alternateOption}}</p>
+            </li>
         </ul>
     </div>
     <div class="list-amenity">
         <ul>
             <h5>Amenities</h5>
-            <li *ngIf="brewery.alternateOption">
-                <p>{{brewery.alternateOption}}</p>
-            </li>
+
             <li *ngIf="brewery.amenityOption">
                 <p>{{brewery.amenityOne}}</p>
             </li>

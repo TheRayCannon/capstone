@@ -15,11 +15,15 @@ export class SearchResultsComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private breweryService: BreweryService) { }
 
+
+
+
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
       this.searchName = decodeURIComponent(params["search"])
       this.breweryService.search(this.searchName).subscribe(response => {
         this.results = response.breweries
+        console.log(this.results)
       })
     }
     )

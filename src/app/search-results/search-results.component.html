@@ -1,4 +1,4 @@
-<app-brewery-listing *ngIf="results.length; else empty" [breweries]="results"></app-brewery-listing>
+<app-brewery-listing-items *ngIf="results.length; else empty" [breweries]="results"></app-brewery-listing-items>
 <ng-template #empty>
     <p>Hmmm.... Looks like we can't find that one!</p>
 </ng-template>

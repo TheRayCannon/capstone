@@ -11,7 +11,9 @@ li {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    margin: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 li:hover {

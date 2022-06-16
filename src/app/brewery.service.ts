@@ -1,11 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Brewery } from './models/Brewery';
+import { Brewery, CoBrewery } from './models/Brewery';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 
 
+
 type BreweriesResponse = {
   breweries: Brewery[];
+}
+
+type OpenBreweryDB =  {
+  coBrews: CoBrewery[];
 }
 
 type BreweryResponse = {
@@ -19,6 +24,7 @@ const httpOptions = {
 }
 
 const breweryEndpoint = environment.baseApiUrl
+const openDB = ""
 
 
 @Injectable({
@@ -27,6 +33,10 @@ const breweryEndpoint = environment.baseApiUrl
 export class BreweryService {
 
 constructor(private http: HttpClient) {
+}
+
+fetchColoradoBrews(){
+  return this.http.get<CoBrewery[]>("https://api.openbrewerydb.org/breweries?by_state=colorado")
 }
 
 fetchBreweries(){
@@ -42,8 +52,8 @@ search(searchName: string){
   return this.http.get<BreweriesResponse>(`${environment.baseApiUrl}/search?search=${searchName}`)
 }
 
-deleteBrewery(name: string){
-  return this.http.delete<Brewery>(`${environment.baseApiUrl}/name`)
+deleteBrewery(id: number){
+  return this.http.delete<Brewery>(`${environment.baseApiUrl}/id`)
 }
 
 editBrewery(updatedBrewery: Brewery) {
