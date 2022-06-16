@@ -53,7 +53,7 @@ search(searchName: string){
 }
 
 deleteBrewery(id: number){
-  return this.http.delete<Brewery>(`${environment.baseApiUrl}/id`)
+  return this.http.delete<Brewery>(`${environment.baseApiUrl}/${id}`).subscribe()
 }
 
 editBrewery(updatedBrewery: Brewery) {

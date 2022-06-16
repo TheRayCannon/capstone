@@ -53,7 +53,7 @@ export class BreweryComponent implements OnInit {
 
   onDelete() {
     this.breweryService.deleteBrewery(+this.id);
-    console.log("sucsess")
-    this.router.navigate(['/breweries']).then(() => {window.location.reload()})
+    this.router.navigate(['/']).then(() => {window.location.reload()})
 }
 }
+
