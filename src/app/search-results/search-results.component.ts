@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BreweryService } from '../brewery.service';
 import { Brewery } from '../models/Brewery';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-search-results',

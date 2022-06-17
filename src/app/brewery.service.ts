@@ -24,7 +24,7 @@ const httpOptions = {
 }
 
 const breweryEndpoint = environment.baseApiUrl
-const openDB = ""
+
 
 
 @Injectable({
